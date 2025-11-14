@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 1: Introduction to Image Editing</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Topic 1: Introduction to Image Editing</h1>
+    </header>
+    <main>
+        <h2>Background</h2>
+        <h3>Raster vs. Vector Graphics</h3>
+        <p><strong>Raster graphics</strong> are composed of a grid of pixels. When you zoom in, you can see the individual pixels. Common raster formats include JPEG and PNG. They are best for photographs and detailed images.</p>
+        <p><strong>Vector graphics</strong> are defined by mathematical equations for points, lines, and curves. They are infinitely scalable without losing quality. Common vector formats include SVG and AI. They are best for logos, icons, and illustrations.</p>
+        <h3>Common File Formats</h3>
+        <ul>
+            <li><strong>JPEG (Joint Photographic Experts Group):</strong> A compressed format best for photographs. It does not support transparency.</li>
+            <li><strong>PNG (Portable Network Graphics):</strong> A lossless format that supports transparency. Great for web graphics and images with transparent backgrounds.</li>
+            <li><strong>GIF (Graphics Interchange Format):</strong> Supports animation and a limited color palette. Good for simple animations.</li>
+            <li><strong>SVG (Scalable Vector Graphics):</strong> A vector format that is great for logos and icons on the web.</li>
+            <li><strong>PSD (Photoshop Document):</strong> The native file format for Adobe Photoshop, which preserves layers and other editing information.</li>
+        </ul>
+
+        <h2>Experiment Task</h2>
+        <p>Perform basic photo correction on the image below.</p>
+        <div class="experiment">
+            <canvas id="canvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <label for="brightness">Brightness:</label>
+                <input type="range" id="brightness" min="-100" max="100" value="0">
+                <label for="contrast">Contrast:</label>
+                <input type="range" id="contrast" min="-100" max="100" value="0">
+                <button id="crop">Crop</button>
+                <button id="resize">Resize</button>
+                <button id="save-jpeg">Save as JPEG</button>
+                <button id="save-png">Save as PNG</button>
+            </div>
+        </div>
+    </main>
+    <script src="/topic1/js/topic1.js"></script>
+</body>
+</html>

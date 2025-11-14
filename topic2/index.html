@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 2: Working with Layers & Selections</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/topic2/css/topic2.css">
+</head>
+<body>
+    <header>
+        <h1>Topic 2: Working with Layers & Selections</h1>
+    </header>
+    <main>
+        <h2>Background</h2>
+        <h3>Layers, Masks, and Blending Modes</h3>
+        <p><strong>Layers</strong> are like transparent sheets stacked on top of each other. They allow you to work on one element of an image without disturbing the others.</p>
+        <p><strong>Masks</strong> are used to selectively hide or reveal parts of a layer. This is a non-destructive way to edit, as you can always go back and change the mask.</p>
+        <p><strong>Blending Modes</strong> control how a layer's pixels blend with the pixels of the layer below it. Examples include Multiply, Screen, and Overlay.</p>
+        <h3>Selections and Transformations</h3>
+        <p><strong>Selection tools</strong> allow you to isolate a specific part of an image to work on. Once you have a selection, you can apply adjustments, filters, or other effects to just that area.</p>
+        <p><strong>Transformations</strong> (scale, rotate, flip, distort) allow you to change the size, orientation, and perspective of a layer or selection.</p>
+
+        <h2>Experiment Task</h2>
+        <p>Design a poster by combining multiple images and text using several layers. Use blending modes for creative effects.</p>
+        <div class="experiment">
+            <div id="poster">
+                <div class="layer" id="layer1"></div>
+                <div class="layer" id="layer2"></div>
+                <div class="layer" id="layer3">
+                    <h2>Explore the World</h2>
+                </div>
+            </div>
+            <div class="controls">
+                <label for="blend-mode">Blend Mode for Layer 2:</label>
+                <select id="blend-mode">
+                    <option value="normal">Normal</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="screen">Screen</option>
+                    <option value="overlay">Overlay</option>
+                    <option value="difference">Difference</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <script src="/topic2/js/topic2.js"></script>
+</body>
+</html>

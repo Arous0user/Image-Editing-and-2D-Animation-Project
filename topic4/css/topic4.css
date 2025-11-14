@@ -1,0 +1,42 @@
+#canvas {
+    border: 1px solid #ccc;
+}
+
+.character {
+    width: 100px;
+    margin: 20px auto;
+}
+
+.head {
+    width: 100px;
+    height: 100px;
+    background: #ffc107;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    border: 2px solid #000;
+}
+
+.eye:first-child {
+    left: 20px;
+}
+
+.eye:last-child {
+    right: 20px;
+}
+
+.body {
+    width: 80px;
+    height: 120px;
+    background: #03a9f4;
+    margin: 0 auto;
+    border-radius: 20px;
+}
