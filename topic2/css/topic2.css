@@ -1,9 +1,11 @@
 #poster {
     position: relative;
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 3 / 2;
     border: 1px solid #ccc;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .layer {
@@ -32,4 +34,11 @@
     color: white;
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #layer3 {
+        font-size: 1.5rem;
+    }
 }
